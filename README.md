@@ -119,7 +119,7 @@ After processing everything, the automation generates:
 results.csv
 ```
 
-Containing:
+Containing the following only for processed requests (Approved or sent for Manual Review):
 
 ```
 RequestId,Decision
