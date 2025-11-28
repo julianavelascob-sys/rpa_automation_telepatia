@@ -1,0 +1,13 @@
+RequestId,CustomerName,CustomerEmail,Amount,Status
+1001,Ana Torres,ana.torres@example.com,45,Pending
+1002,Carlos Mejía,carlos.mejia@example.com,250,Pending
+1003,Sofía Ramírez,sofia.ramirez@example.com,80,Approved
+1004,Tomás Delgado,tomas.delgado@example.com,120,Pending
+1005,Laura Gómez,laura.gomez@example.com,15,Rejected
+1006,Daniel Ruiz,daniel.ruiz@example.com,300,Pending
+1007,María Diaz,,55,Pending
+1001,Ana Torres,ana.torres@example.com,45,Pending
+1009,Camila Rojas,camila.rojas@example.com,forty,Pending
+1010,Luisa Benítez,luisa.benitez@example.com,40,WAITING
+1003,Sofía Ramírez,sofia.ramirez@example.com,80,Approved
+1012,Lucas Herrera,lucas.herrera@example.com,-10,Pending

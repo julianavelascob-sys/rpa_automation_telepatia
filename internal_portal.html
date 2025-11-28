@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Title shown in the browser tab -->
+    <title>Refund Portal</title>
+
+    <!-- Basic styles for the page -->
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 450px;
+            margin: 40px auto; /* center content */
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        /* Making all the same width */
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            box-sizing: border-box; /* keeps everything aligned */
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6dda72;
+        }
+
+        #resultbox {
+            margin-top: 25px;
+            padding: 12px;
+            background: #f1f1f1;
+            border-radius: 6px;
+            min-height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page header -->
+    <h2>Refund Request Portal</h2>
+
+    <!-- Each input has a unique id -->
+    <label for="reqId">Request ID</label>
+    <input id="reqId" type="text" />
+
+    <label for="name">Customer Name</label>
+    <input id="name" type="text" />
+
+    <label for="email">Email</label>
+    <input id="email" type="email" />
+
+    <label for="amount">Amount</label>
+    <input id="amount" type="number" />
+
+    <label for="decision">Decision</label>
+    <select id="decision">
+        <!-- Options the bot will pick based on the amount -->
+        <option value="Approved">Approved</option>
+        <option value="Manual Review">Manual Review</option>
+    </select>
+
+    <!-- Submit button -->
+    <button onclick="submitForm()">Submit</button>
+
+    <!-- Where the data appears after clicking submit -->
+    <div id="resultbox"></div>
+
+    <script>
+        /* 
+           Reads all fields, prints the values into the #resultbox div and 
+           logs them in the console.
+        */
+        function submitForm() {
+            // Get the field values
+            const id = document.getElementById("reqId").value;
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const amount = document.getElementById("amount").value;
+            const decision = document.getElementById("decision").value;
+
+            // Show the submitted info on the page
+            document.getElementById("resultbox").innerHTML = `
+                <strong>Submitted:</strong><br>
+                Request ID: ${id}<br>
+                Name: ${name}<br>
+                Email: ${email}<br>
+                Amount: ${amount}<br>
+                Decision: ${decision}
+            `;
+
+            // Log the same info in the browser console
+            console.log("Submitted:", {
+                id,
+                name,
+                email,
+                amount,
+                decision
+            });
+        }
+    </script>
+
+</body>
+</html>

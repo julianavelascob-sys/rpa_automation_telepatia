@@ -1,0 +1,35 @@
+2025-11-27 18:36:29 | INFO | === Automation Script Started ===
+2025-11-27 18:36:29 | INFO | Refund automation started.
+2025-11-27 18:36:29 | INFO | Loaded 12 rows from data.csv
+2025-11-27 18:36:30 | INFO | Portal loaded successfully.
+2025-11-27 18:36:30 | INFO | Processing row: {'RequestId': '1001', 'CustomerName': 'Ana Torres', 'CustomerEmail': 'ana.torres@example.com', 'Amount': '45', 'Status': 'Pending'}
+2025-11-27 18:36:33 | INFO | Submitted RequestId 1001 with decision 'Approved'
+2025-11-27 18:36:33 | INFO | Processing row: {'RequestId': '1002', 'CustomerName': 'Carlos Mejía', 'CustomerEmail': 'carlos.mejia@example.com', 'Amount': '250', 'Status': 'Pending'}
+2025-11-27 18:36:35 | INFO | Submitted RequestId 1002 with decision 'Manual Review'
+2025-11-27 18:36:35 | INFO | Processing row: {'RequestId': '1003', 'CustomerName': 'Sofía Ramírez', 'CustomerEmail': 'sofia.ramirez@example.com', 'Amount': '80', 'Status': 'Approved'}
+2025-11-27 18:36:35 | INFO | Skipping row 1003 (Status = Approved)
+2025-11-27 18:36:35 | INFO | Processing row: {'RequestId': '1004', 'CustomerName': 'Tomás Delgado', 'CustomerEmail': 'tomas.delgado@example.com', 'Amount': '120', 'Status': 'Pending'}
+2025-11-27 18:36:38 | INFO | Submitted RequestId 1004 with decision 'Manual Review'
+2025-11-27 18:36:38 | INFO | Processing row: {'RequestId': '1005', 'CustomerName': 'Laura Gómez', 'CustomerEmail': 'laura.gomez@example.com', 'Amount': '15', 'Status': 'Rejected'}
+2025-11-27 18:36:38 | INFO | Skipping row 1005 (Status = Rejected)
+2025-11-27 18:36:38 | INFO | Processing row: {'RequestId': '1006', 'CustomerName': 'Daniel Ruiz', 'CustomerEmail': 'daniel.ruiz@example.com', 'Amount': '300', 'Status': 'Pending'}
+2025-11-27 18:36:40 | INFO | Submitted RequestId 1006 with decision 'Manual Review'
+2025-11-27 18:36:40 | INFO | Processing row: {'RequestId': '1007', 'CustomerName': 'María Diaz', 'CustomerEmail': '', 'Amount': '55', 'Status': 'Pending'}
+2025-11-27 18:36:40 | ERROR | Missing field 'CustomerEmail' → Skipping row: {'RequestId': '1007', 'CustomerName': 'María Diaz', 'CustomerEmail': '', 'Amount': '55', 'Status': 'Pending'}
+2025-11-27 18:36:40 | WARNING | Skipping invalid row: {'RequestId': '1007', 'CustomerName': 'María Diaz', 'CustomerEmail': '', 'Amount': '55', 'Status': 'Pending'}
+2025-11-27 18:36:40 | INFO | Processing row: {'RequestId': '1001', 'CustomerName': 'Ana Torres', 'CustomerEmail': 'ana.torres@example.com', 'Amount': '45', 'Status': 'Pending'}
+2025-11-27 18:36:43 | INFO | Submitted RequestId 1001 with decision 'Approved'
+2025-11-27 18:36:43 | INFO | Processing row: {'RequestId': '1009', 'CustomerName': 'Camila Rojas', 'CustomerEmail': 'camila.rojas@example.com', 'Amount': 'forty', 'Status': 'Pending'}
+2025-11-27 18:36:43 | ERROR | Amount is not numeric → Skipping row: {'RequestId': '1009', 'CustomerName': 'Camila Rojas', 'CustomerEmail': 'camila.rojas@example.com', 'Amount': 'forty', 'Status': 'Pending'}
+2025-11-27 18:36:43 | WARNING | Skipping invalid row: {'RequestId': '1009', 'CustomerName': 'Camila Rojas', 'CustomerEmail': 'camila.rojas@example.com', 'Amount': 'forty', 'Status': 'Pending'}
+2025-11-27 18:36:43 | INFO | Processing row: {'RequestId': '1010', 'CustomerName': 'Luisa Benítez', 'CustomerEmail': 'luisa.benitez@example.com', 'Amount': '40', 'Status': 'WAITING'}
+2025-11-27 18:36:43 | ERROR | Invalid status 'WAITING' → Skipping row: {'RequestId': '1010', 'CustomerName': 'Luisa Benítez', 'CustomerEmail': 'luisa.benitez@example.com', 'Amount': '40', 'Status': 'WAITING'}
+2025-11-27 18:36:43 | WARNING | Skipping invalid row: {'RequestId': '1010', 'CustomerName': 'Luisa Benítez', 'CustomerEmail': 'luisa.benitez@example.com', 'Amount': '40', 'Status': 'WAITING'}
+2025-11-27 18:36:43 | INFO | Processing row: {'RequestId': '1003', 'CustomerName': 'Sofía Ramírez', 'CustomerEmail': 'sofia.ramirez@example.com', 'Amount': '80', 'Status': 'Approved'}
+2025-11-27 18:36:43 | INFO | Skipping row 1003 (Status = Approved)
+2025-11-27 18:36:43 | INFO | Processing row: {'RequestId': '1012', 'CustomerName': 'Lucas Herrera', 'CustomerEmail': 'lucas.herrera@example.com', 'Amount': '-10', 'Status': 'Pending'}
+2025-11-27 18:36:43 | ERROR | Negative amount → Skipping row: {'RequestId': '1012', 'CustomerName': 'Lucas Herrera', 'CustomerEmail': 'lucas.herrera@example.com', 'Amount': '-10', 'Status': 'Pending'}
+2025-11-27 18:36:43 | WARNING | Skipping invalid row: {'RequestId': '1012', 'CustomerName': 'Lucas Herrera', 'CustomerEmail': 'lucas.herrera@example.com', 'Amount': '-10', 'Status': 'Pending'}
+2025-11-27 18:36:43 | INFO | Automation completed successfully.
+2025-11-27 18:36:43 | INFO | Results saved to results.csv
+2025-11-27 18:36:43 | INFO | === Script finished ===
