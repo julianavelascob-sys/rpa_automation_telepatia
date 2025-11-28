@@ -1,10 +1,10 @@
 # Refund Request RPA Automation
 
-This project simulates a small internal operations workflow that processes refund requests from a CSV file and submits them automatically into a local web portal using Python and Playwright. It replaces a previously manual, error-prone process with a fully automated RPA script.
+This project simulates a small internal operations workflow that processes refund requests from a CSV file and submits them automatically into a local web portal using Python and Playwright. 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 /project-folder
@@ -19,7 +19,7 @@ This project simulates a small internal operations workflow that processes refun
 
 ---
 
-## ⚙️ Tools & Versions Used
+## Tools & Versions Used
 
 - Python 3.10+
 - Playwright for Python (sync API)
@@ -37,7 +37,7 @@ python3 -m playwright install-deps
 
 ---
 
-## 📥 Input File: `data.csv`
+## Input File: `data.csv`
 
 Your CSV must contain the following columns:
 
@@ -53,7 +53,7 @@ Only **Pending** rows are processed. Invalid rows are skipped but logged.
 
 ---
 
-## 🌐 Internal Portal (`internal_portal.html`)
+## Internal Portal (`internal_portal.html`)
 
 A simple HTML page acting as the internal "refund portal."
 
@@ -75,7 +75,7 @@ The automation fills this form and submits it for each pending request.
 
 ---
 
-## 🤖 Automation Workflow (`automation.py`)
+## Automation Workflow (`automation.py`)
 
 ### 1. Load and validate the CSV
 
@@ -87,7 +87,6 @@ The automation fills this form and submits it for each pending request.
 Invalid rows:
 - Are logged
 - Are skipped
-- Do not stop the robot
 
 ### 2. Open the internal portal
 
@@ -142,7 +141,7 @@ Containing:
 
 ---
 
-### ⏳ Note on Timing (Deliberate Delays)
+### Note on Timing (Deliberate Delays)
 
 The automation includes small `time.sleep()` delays between each field interaction.
 
@@ -150,7 +149,7 @@ These pauses were added intentionally so the reviewer can clearly see every step
 
 In a production-grade RPA process, these delays would be removed to maximize speed and efficiency, since programmatic interactions do not require visual confirmation.
 
-## ▶️ Running the Automation
+## Running the Automation
 
 1. Open a terminal inside the project folder:
 
@@ -172,7 +171,7 @@ python3 automation.py
 
 ---
 
-## 🛑 Error Handling Demonstration
+## Error Handling Demonstration
 
 The automation was designed to behave safely with incorrect CSV data.
 
@@ -195,8 +194,6 @@ Below are real examples from the provided `data.csv`.
 ```
 2025-02-18 15:22:11 | ERROR | Amount is not numeric → Skipping row: {…}
 2025-02-18 15:22:13 | ERROR | Missing field 'CustomerEmail' → Skipping row: {…}
-2025-02-18 15:22:15 | ERROR | Invalid status 'WAITING' → Skipping row: {…}
-2025-02-18 15:22:16 | ERROR | Negative amount → Skipping row: {…}
 ```
 
 ### Behavior Summary
@@ -211,7 +208,7 @@ Below are real examples from the provided `data.csv`.
 
 ---
 
-## ✅ Deliverables Included
+## Deliverables Included
 
 - `automation.py`  
 - `internal_portal.html`  
@@ -224,7 +221,7 @@ This fulfills all requirements of the assignment.
 
 ---
 
-## 🎉 Final Notes
+## Final Notes
 
 This project demonstrates:
 
@@ -236,6 +233,4 @@ This project demonstrates:
 - CSV processing  
 - UI interaction  
 
-It is designed to be easy to run and easy to review.
-
-Thank you for reviewing this project!
+Thank you!
