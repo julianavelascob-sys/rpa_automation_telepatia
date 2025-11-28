@@ -184,9 +184,6 @@ Below are real examples from the provided `data.csv`.
 
 [ERROR] Missing field 'CustomerEmail' → Skipping row: {'RequestId': '1007', 'CustomerName': 'María Diaz', 'CustomerEmail': '', 'Amount': '55', 'Status': 'Pending'}
 
-[ERROR] Invalid status 'WAITING' → Skipping row: {'RequestId': '1010', 'CustomerName': 'Luisa Benítez', 'CustomerEmail': 'luisa.benitez@example.com', 'Amount': '40', 'Status': 'WAITING'}
-
-[ERROR] Negative amount → Skipping row: {'RequestId': '1012', 'CustomerName': 'Lucas Herrera', 'CustomerEmail': 'lucas.herrera@example.com', 'Amount': '-10', 'Status': 'Pending'}
 ```
 
 ### Log File (`automation.log`):
