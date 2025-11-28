@@ -183,7 +183,6 @@ Below are real examples from the provided `data.csv`.
 [ERROR] Amount is not numeric → Skipping row: {'RequestId': '1009', 'CustomerName': 'Camila Rojas', 'CustomerEmail': 'camila.rojas@example.com', 'Amount': 'forty', 'Status': 'Pending'}
 
 [ERROR] Missing field 'CustomerEmail' → Skipping row: {'RequestId': '1007', 'CustomerName': 'María Diaz', 'CustomerEmail': '', 'Amount': '55', 'Status': 'Pending'}
-
 ```
 
 ### Log File (`automation.log`):
